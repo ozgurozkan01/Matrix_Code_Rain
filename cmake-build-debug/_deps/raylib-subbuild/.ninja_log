@@ -1,0 +1,21 @@
+# ninja log v5
+1	64	7133290393221310	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	678794706bdf43c
+1	64	7133290393221310	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	678794706bdf43c
+65	9204	7133290484621414	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	1fee8fce32f848ec
+65	9204	7133290484621414	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	1fee8fce32f848ec
+9204	9248	7133290485061405	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	879ebc642ee08e8a
+9204	9248	7133290485061405	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	879ebc642ee08e8a
+9248	9294	7133290485516579	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	57dec6855c5afa74
+9248	9294	7133290485516579	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	57dec6855c5afa74
+9294	9339	7133290485966608	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	36687010d8903e45
+9294	9339	7133290485966608	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	36687010d8903e45
+9339	9388	7133290486451734	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	d58f9982423f776f
+9339	9388	7133290486451734	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	d58f9982423f776f
+9388	9433	7133290486921734	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	28ca5c5210cafb33
+9388	9433	7133290486921734	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	28ca5c5210cafb33
+9433	9482	7133290487397062	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	40c1ec2b6d075f63
+9433	9482	7133290487397062	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	40c1ec2b6d075f63
+9482	9543	7133290488016930	CMakeFiles/raylib-populate-complete	f00c5b2896a2de19
+9482	9543	7133290488016930	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	f00c5b2896a2de19
+9482	9543	7133290488016930	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	f00c5b2896a2de19
+9482	9543	7133290488016930	C:/Users/ozgur/CLionProjects/MATRIX_SCENE/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	f00c5b2896a2de19
