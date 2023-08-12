@@ -1,0 +1,3 @@
+C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/Matrix_Code_Rain.dir
+C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/rebuild_cache.dir
