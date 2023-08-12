@@ -423,3 +423,110 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
+      - "cmake-build-debug/_deps/raylib-src/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
+      - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:29 (include)"
+    checks:
+      - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
+    directories:
+      source: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xxhxo"
+      binary: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xxhxo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_THOSE_TOGGLES"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xxhxo
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.1.5/bin/ninja/win/x64/ninja.exe -v cmTC_2193a && [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe -DCOMPILER_HAS_THOSE_TOGGLES  -fdiagnostics-color=always   -Werror=pointer-arith -o CMakeFiles/cmTC_2193a.dir/src.c.obj -c C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xxhxo/src.c
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_2193a.dir/src.c.obj -o cmTC_2193a.exe -Wl,--out-implib,libcmTC_2193a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/CMakeLists.txt:62 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pso877"
+      binary: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pso877"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_MODULE_PATH: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pso877
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.1.5/bin/ninja/win/x64/ninja.exe -v cmTC_49459 && [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -fdiagnostics-color=always -o CMakeFiles/cmTC_49459.dir/src.c.obj -c C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pso877/src.c
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_49459.dir/src.c.obj -o cmTC_49459.exe -Wl,--out-implib,libcmTC_49459.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:158 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5ko71r"
+      binary: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5ko71r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "DINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5ko71r
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.1.5/bin/ninja/win/x64/ninja.exe -v cmTC_80997 && [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -fdiagnostics-color=always -o CMakeFiles/cmTC_80997.dir/CheckIncludeFile.c.obj -c C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5ko71r/CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_80997.dir/CheckIncludeFile.c.obj -o cmTC_80997.exe -Wl,--out-implib,libcmTC_80997.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.5/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:159 (check_include_file)"
+    checks:
+      - "Looking for xinput.h"
+    directories:
+      source: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wrz01"
+      binary: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wrz01"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "XINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wrz01
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.1.5/bin/ninja/win/x64/ninja.exe -v cmTC_91b09 && [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -fdiagnostics-color=always -o CMakeFiles/cmTC_91b09.dir/CheckIncludeFile.c.obj -c C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wrz01/CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_91b09.dir/CheckIncludeFile.c.obj -o cmTC_91b09.exe -Wl,--out-implib,libcmTC_91b09.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
