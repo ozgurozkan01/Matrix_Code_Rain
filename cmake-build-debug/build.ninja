@@ -57,6 +57,14 @@ build CMakeFiles/Matrix_Code_Rain.dir/main.cpp.obj: CXX_COMPILER__Matrix_Code_Ra
   OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir
   OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir
 
+build CMakeFiles/Matrix_Code_Rain.dir/Character.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/Character.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\Character.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir
+  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Matrix_Code_Rain
@@ -65,7 +73,7 @@ build CMakeFiles/Matrix_Code_Rain.dir/main.cpp.obj: CXX_COMPILER__Matrix_Code_Ra
 #############################################
 # Link the executable Matrix_Code_Rain.exe
 
-build Matrix_Code_Rain.exe: CXX_EXECUTABLE_LINKER__Matrix_Code_Rain_Debug CMakeFiles/Matrix_Code_Rain.dir/main.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
+build Matrix_Code_Rain.exe: CXX_EXECUTABLE_LINKER__Matrix_Code_Rain_Debug CMakeFiles/Matrix_Code_Rain.dir/main.cpp.obj CMakeFiles/Matrix_Code_Rain.dir/Character.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  _deps/raylib-build/raylib/external/glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir
