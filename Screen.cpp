@@ -40,6 +40,7 @@ Screen::Screen()
 Screen::~Screen()
 {
     delete [] characterBuffers;
+    delete [] matrixCharacterBuffer;
     CloseWindow();
 }
 
