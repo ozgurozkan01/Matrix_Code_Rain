@@ -13,6 +13,12 @@
 },
 {
   "directory": "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\CharacterBuffer.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\CharacterBuffer.cpp",
+  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\CharacterBuffer.cpp",
+  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\CharacterBuffer.cpp.obj"
+},
+{
+  "directory": "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug",
   "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -isystem C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99 -fdiagnostics-color=always -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\rcore.c.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\cmake-build-debug\\_deps\\raylib-src\\src\\rcore.c",
   "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\cmake-build-debug\\_deps\\raylib-src\\src\\rcore.c",
   "output": "_deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\rcore.c.obj"
