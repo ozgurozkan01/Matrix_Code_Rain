@@ -349,7 +349,7 @@ typedef struct {
     bool isMouse;                   // True if device supports relative X Y movements
     bool isTouch;                   // True if device supports absolute X Y movements and has BTN_TOUCH
     bool isMultitouch;              // True if device supports multiple absolute movevents and has BTN_TOUCH
-    bool isKeyboard;                // True if device has letter keycodes
+    bool isKeyboard;                // True if device has characters keycodes
     bool isGamepad;                 // True if device has gamepad buttons
 } InputEventWorker;
 #endif
@@ -2964,7 +2964,7 @@ const char *GetDirectoryPath(const char *filePath)
     static char dirPath[MAX_FILEPATH_LENGTH] = { 0 };
     memset(dirPath, 0, MAX_FILEPATH_LENGTH);
 
-    // In case provided path does not contain a root drive letter (C:\, D:\) nor leading path separator (\, /),
+    // In case provided path does not contain a root drive characters (C:\, D:\) nor leading path separator (\, /),
     // we add the current directory path to dirPath
     if (filePath[1] != ':' && filePath[0] != '\\' && filePath[0] != '/')
     {

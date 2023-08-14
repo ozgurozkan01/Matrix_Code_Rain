@@ -192,7 +192,7 @@
 #ifndef RL_DEFAULT_BATCH_BUFFER_ELEMENTS
     #if defined(GRAPHICS_API_OPENGL_11) || defined(GRAPHICS_API_OPENGL_33)
         // This is the maximum amount of elements (quads) per batch
-        // NOTE: Be careful with text, every letter maps to a quad
+        // NOTE: Be careful with text, every characters maps to a quad
         #define RL_DEFAULT_BATCH_BUFFER_ELEMENTS  8192
     #endif
     #if defined(GRAPHICS_API_OPENGL_ES2)
