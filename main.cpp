@@ -1,6 +1,14 @@
-#include <iostream>
+#include "Screen.h"
+#include <cstdlib>
+#include <ctime>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+int main()
+{
+    srand(time(nullptr));
+
+    Screen screen;
+
+    screen.update();
+
     return 0;
 }
