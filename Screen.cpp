@@ -8,7 +8,9 @@
 #include "Character.h"
 #include <iostream>
 
-int Screen::maxColumnNumber = Screen::windowWidth / Character::getFontSize();
+int Screen::maxColumnNumber = Screen::windowWidth / (Character::getFontSize());
+int Screen::characterBufferNumber = 200;
+int Screen::matrixIndex = 1;
 
 Screen::Screen()
 {
@@ -23,6 +25,7 @@ Screen::Screen()
         matrixCharacterBuffer[i].setTargetIndex(12);
         matrixCharacterBuffer[i].setCanPositionUpdate(false);
         matrixCharacterBuffer[i].getBuffer()[matrixCharacterBuffer[i].getTargetIndex() - 1].characters[0] = theMatrix[i];
+        matrixCharacterBuffer[i].getBuffer()[matrixCharacterBuffer[i].getTargetIndex() - 1].setIsTransparencyChangeable(false);
 
         for (int j = 0; j < 12; ++j)
         {
@@ -32,12 +35,11 @@ Screen::Screen()
     }
 
     bufferIndex = 1;
-    matrixIndex = 1;
     codeRainTimer = 0;
-    codeRainTimeLimit = 0.3;
+    codeRainTimeLimit = 0.025;
     matrixTimer = 0;
-    matrixTimeLimit = 0.55;
-    matrixBufferMinStart = 17;
+    matrixTimeLimit = 0.3;
+    matrixBufferMinStart = 150;
 
     canBufferIndexIncrease = true;
 }
@@ -56,10 +58,16 @@ void Screen::update()
     {
         ClearBackground(BLACK);
 
+
         // Draw all letter in the letterBuffer
         for (int i = 0; i < bufferIndex; ++i)
         {
             characterBuffers[i].update();
+        }
+
+        if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && !hasBufferIndexReachedMax() && canBufferIndexIncrease)
+        {
+            bufferIndex++;
         }
 
         // Draw "The Matrix" on the screen
@@ -76,21 +84,20 @@ void Screen::update()
             }
         }
 
-        if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && !hasBufferIndexReachedMax() && canBufferIndexIncrease)
-        {
-            bufferIndex++;
-        }
-
-        else if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && !isBufferIndexEmpty() && !canBufferIndexIncrease)
-        {
-            bufferIndex--;
-        }
-
         if (hasBufferIndexReachedMax() && canBufferIndexIncrease)
         {
             canBufferIndexIncrease = false;
         }
 
+        if (!isBufferIndexMin() &&
+            !canBufferIndexIncrease/* &&
+            characterBuffers[bufferIndex-1].getBuffer()[characterBuffers[bufferIndex-1].getTargetIndex()-1].getTransparency() < 55*/
+            )
+        {
+            bufferIndex--;
+        }
+
+        std::cout << bufferIndex << std::endl;
         EndDrawing();
     }
 }
@@ -112,7 +119,7 @@ bool Screen::hasBufferIndexReachedMax() const
     return bufferIndex == characterBufferNumber;
 }
 
-bool Screen::isBufferIndexEmpty() const
+bool Screen::isBufferIndexMin() const
 {
     return bufferIndex == 0;
 }

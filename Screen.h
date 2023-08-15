@@ -11,13 +11,13 @@ class CharacterBuffer;
 class Screen {
     const static int windowWidth = 800;
     const static int windowHeight = 600;
-    const static int characterBufferNumber = 75;
+    static int characterBufferNumber;
 
     static int maxColumnNumber;
 
     int matrixBufferMinStart;
     int bufferIndex;
-    int matrixIndex;
+    static int matrixIndex;
     float codeRainTimer;
     float codeRainTimeLimit;
 
@@ -41,10 +41,10 @@ public:
 
     void update();
     static int getMaxColumbNunber();
-    static bool canChangeIndex(float& timer, float& timeLimit);
+    bool canChangeIndex(float& timer, float& timeLimit);
     static int getWindowHeight();
     bool hasBufferIndexReachedMax() const;
-    bool isBufferIndexEmpty() const;
+    bool isBufferIndexMin() const;
 };
 
 
