@@ -35,6 +35,8 @@ Screen::Screen()
     matrixTimer = 0;
     matrixTimeLimit = 0.55;
     matrixBufferMinStart = 17;
+
+    canBufferIndexIncrease = true;
 }
 
 Screen::~Screen()
@@ -60,7 +62,7 @@ void Screen::update()
         }
 
         // Draw "The Matrix" on the screen
-        if (canDecreaseIndex() && bufferIndex <= matrixBufferMinStart)
+        if (!canBufferIndexIncrease && bufferIndex <= matrixBufferMinStart)
         {
             for (int i = 0; i < matrixIndex; ++i)
             {
@@ -73,16 +75,20 @@ void Screen::update()
             }
         }
 
-        if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && hasBufferIndexReachedMax() && !canDecreaseIndex())
+        if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && !hasBufferIndexReachedMax() && canBufferIndexIncrease)
         {
             bufferIndex++;
         }
 
-        else if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && !isBufferIndexEmpty() && canDecreaseIndex())
+        else if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && !isBufferIndexEmpty() && !canBufferIndexIncrease)
         {
             bufferIndex--;
         }
 
+        if (hasBufferIndexReachedMax() && canBufferIndexIncrease)
+        {
+            canBufferIndexIncrease = false;
+        }
 
         EndDrawing();
     }
