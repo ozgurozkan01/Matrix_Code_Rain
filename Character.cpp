@@ -1,18 +1,21 @@
 
 #include "Character.h"
 
-Character::Character(int positionX, int positionY, char value, unsigned transparentValue) :
-        positionX(positionX),
-        positionY(positionY),
-        transparency(transparentValue)
+Character::Character()
 {
-    fontSize = 10;
-    characters[0] = value;
-    characters[1] = '\0';
-    transparency = transparentValue ;
+    transparencyDecreasingSpeed = 299.f;
+    transparency = 255;
     color = getColor();
     isTransparencyChangeable = true;
     green = 225;
+}
+
+void Character::init(int xCord, int yCord, char value)
+{
+    positionX = xCord;
+    positionY = yCord;
+    characters[0] = value;
+    characters[1] = '\0';
 }
 
 void Character::drawCharacter() const
@@ -27,7 +30,7 @@ void Character::update()
     drawCharacter();
 
     if (canTransparencyDecrease() && isTransparencyChangeable)
-        decreaseTransparency(GetFrameTime() * 333);
+        decreaseTransparency(GetFrameTime() * transparencyDecreasingSpeed);
 
 }
 
@@ -71,4 +74,8 @@ unsigned char Character::getTransparency()
 void Character::setTransparency(unsigned char transparencyValue)
 {
     transparency = transparencyValue;
+}
+
+int Character::getFontSize() {
+    return fontSize;
 }

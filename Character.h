@@ -9,19 +9,24 @@
 
 class Character {
 
-    int fontSize;
-
     Color color;
+
     int positionX;
     int positionY;
+    const static int fontSize = 10;
+
+    float transparencyDecreasingSpeed;
+
     unsigned char green;
-    bool isTransparencyChangeable;
     unsigned char transparency;
+
+    bool isTransparencyChangeable;
 
 public:
     char characters[2];
-    Character(int positionX, int positionY, char value, unsigned transparentValue);
+    Character();
 
+    void init(int xCord, int yCord, char value);
     void update();
     void drawCharacter() const;
     void decreaseTransparency(float decreasing);
@@ -34,6 +39,7 @@ public:
     bool canTransparencyDecrease();
     bool getIsTransparencyChangeable();
     unsigned char getTransparency();
+    static int getFontSize();
 };
 
 
