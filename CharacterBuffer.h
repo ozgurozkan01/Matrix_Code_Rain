@@ -38,11 +38,8 @@ public:
     bool isIndexEqualToTarget() const;
     bool canIncreaseIndex();
     static char designateCharacterRandomly();
-    static int designateTargetIndexRandomly();
-
 
     // Static Buffer
-    bool canUpdateStaticBuffer();
     void setStaticBufferTransparency();
 
     // Nonstatic Buffer
