@@ -8,10 +8,13 @@
 #include "Character.h"
 #include <iostream>
 
+int Screen::maxColumnNumber = Screen::windowWidth / Character::getFontSize();
+
 Screen::Screen()
 {
     InitWindow(windowWidth, windowHeight, "Matrix_Code_Rain");
     SetTargetFPS(60);
+
     characterBuffers = new CharacterBuffer[characterBufferNumber];
     matrixCharacterBuffer = new CharacterBuffer[theMatrixLength];
 
@@ -19,12 +22,12 @@ Screen::Screen()
     {
         matrixCharacterBuffer[i].setTargetIndex(12);
         matrixCharacterBuffer[i].setCanPositionUpdate(false);
-        matrixCharacterBuffer[i].getBuffer()[matrixCharacterBuffer[i].getTargetIndex() - 1]->characters[0] = theMatrix[i];
+        matrixCharacterBuffer[i].getBuffer()[matrixCharacterBuffer[i].getTargetIndex() - 1].characters[0] = theMatrix[i];
 
         for (int j = 0; j < 12; ++j)
         {
-            matrixCharacterBuffer[i].getBuffer()[j]->setPositionX(theMatrixPosX[i]);
-            matrixCharacterBuffer[i].getBuffer()[j]->setPositionY(0 + (25 * j));
+            matrixCharacterBuffer[i].getBuffer()[j].setPositionX(theMatrixPosX[i]);
+            matrixCharacterBuffer[i].getBuffer()[j].setPositionY(0 + (25 * j));
         }
     }
 
@@ -52,8 +55,6 @@ void Screen::update()
     while(!WindowShouldClose())
     {
         ClearBackground(BLACK);
-
-        std::cout << "Time : " << GetTime() << "   index : " << bufferIndex << std::endl;
 
         // Draw all letter in the letterBuffer
         for (int i = 0; i < bufferIndex; ++i)
@@ -106,16 +107,22 @@ bool Screen::canChangeIndex(float& timer, float& timeLimit)
     return false;
 }
 
-bool Screen::canDecreaseIndex()
-{
-    return GetTime() > 150.f;
-}
-
-bool Screen::hasBufferIndexReachedMax()
+bool Screen::hasBufferIndexReachedMax() const
 {
     return bufferIndex == characterBufferNumber;
 }
 
-bool Screen::isBufferIndexEmpty() {
+bool Screen::isBufferIndexEmpty() const
+{
     return bufferIndex == 0;
+}
+
+int Screen::getMaxColumbNunber()
+{
+    return maxColumnNumber;
+}
+
+int Screen::getWindowHeight()
+{
+    return windowHeight;
 }

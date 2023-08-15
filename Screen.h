@@ -13,6 +13,8 @@ class Screen {
     const static int windowHeight = 600;
     const static int characterBufferNumber = 75;
 
+    static int maxColumnNumber;
+
     int matrixBufferMinStart;
     int bufferIndex;
     int matrixIndex;
@@ -38,10 +40,11 @@ public:
     ~Screen();
 
     void update();
-    bool canChangeIndex(float& timer, float& timeLimit);
-    bool canDecreaseIndex();
-    bool hasBufferIndexReachedMax();
-    bool isBufferIndexEmpty();
+    static int getMaxColumbNunber();
+    static bool canChangeIndex(float& timer, float& timeLimit);
+    static int getWindowHeight();
+    bool hasBufferIndexReachedMax() const;
+    bool isBufferIndexEmpty() const;
 };
 
 
