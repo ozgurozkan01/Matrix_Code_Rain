@@ -9,10 +9,9 @@ class Character;
 
 class CharacterBuffer {
 
-    const static int characterNumber = 20;
+    static int characterNumber;
 
-    Character* charBuffer[characterNumber]{};
-
+    Character* charBuffer;
     float timeLimit;
     float timer;
 
@@ -29,7 +28,7 @@ public:
     CharacterBuffer();
     ~CharacterBuffer();
 
-    Character** getBuffer();
+    Character* getBuffer();
 
     // Comman
     void update();

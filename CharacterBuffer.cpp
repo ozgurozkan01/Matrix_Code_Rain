@@ -2,8 +2,11 @@
 // Created by ozgur on 14/08/2023.
 //
 #include <iostream>
+#include "Screen.h"
 #include "CharacterBuffer.h"
 #include "Character.h"
+
+int CharacterBuffer::characterNumber = Screen::getWindowHeight() / Character::getFontSize();
 
 CharacterBuffer::CharacterBuffer()
 {
@@ -17,12 +20,11 @@ CharacterBuffer::CharacterBuffer()
     isPositionUpdatable = true;
     targetIndexToDraw = designateTargetIndexRandomly();
 
-    unsigned char transparencyValue = (rand() % 101) + 75;
-
-
+    charBuffer = new Character[characterNumber];
+    
     for (int i = 0; i < characterNumber; ++i)
     {
-        charBuffer[i] = new Character(firstCharacterPosX, firstCharacterPosY + (additionY * (i + 1)), designateCharacterRandomly(), transparencyValue);
+        charBuffer[i].init(firstCharacterPosX, firstCharacterPosY + (additionY * (i + 1)), designateCharacterRandomly());
     }
 }
 
@@ -32,14 +34,14 @@ void CharacterBuffer::update()
     // Draw characters one by one
     for (int i = 0; i < index; ++i)
     {
-        if (charBuffer[i]->getIsTransparencyChangeable())
+        if (charBuffer[i].getIsTransparencyChangeable())
         {
-            charBuffer[i]->update();
+            charBuffer[i].update();
         }
 
         else
         {
-            charBuffer[targetIndexToDraw - 1]->drawCharacter();
+            charBuffer[targetIndexToDraw - 1].drawCharacter();
         }
     }
 
@@ -54,7 +56,7 @@ void CharacterBuffer::update()
         setStaticBufferTransparency();
     }
 
-    if (isIndexEqualToTarget() && isPositionUpdatable && charBuffer[targetIndexToDraw - 1]->getTransparency() < 10)
+    if (isIndexEqualToTarget() && isPositionUpdatable && charBuffer[targetIndexToDraw - 1].getTransparency() < 10)
     {
         index = 1;
         targetIndexToDraw = designateTargetIndexRandomly();
@@ -64,10 +66,7 @@ void CharacterBuffer::update()
 
 CharacterBuffer::~CharacterBuffer()
 {
-    for (auto letter : charBuffer)
-    {
-        delete letter;
-    }
+    delete [] charBuffer;
 }
 
 void CharacterBuffer::updateNonstaticBufferProperty()
@@ -76,11 +75,11 @@ void CharacterBuffer::updateNonstaticBufferProperty()
 
     for (int i = 0; i < characterNumber; ++i)
     {
-        charBuffer[i]->setPositionY(firstCharacterPosY + additionY * i);
-        charBuffer[i]->setPositionX(firstCharacterPosX);
-        charBuffer[i]->characters[0] = designateCharacterRandomly();
-        charBuffer[i]->characters[1] = '\0';
-        charBuffer[i]->setTransparency(0xFF);
+        charBuffer[i].setPositionY(firstCharacterPosY + additionY * i);
+        charBuffer[i].setPositionX(firstCharacterPosX);
+        charBuffer[i].characters[0] = designateCharacterRandomly();
+        charBuffer[i].characters[1] = '\0';
+        charBuffer[i].setTransparency(0xFF);
     }
 }
 
@@ -98,20 +97,20 @@ bool CharacterBuffer::canIncreaseIndex() {
 
 void CharacterBuffer::setFirstCharacterPositionRandomly()
 {
-    firstCharacterPosY = (rand() % 31) * 15;
-    firstCharacterPosX = (rand() % 41) * 20;
+    firstCharacterPosY = 0;
+    firstCharacterPosX = (rand() % Screen::getMaxColumbNunber()) * Character::getFontSize();
 }
 
 int CharacterBuffer::designateTargetIndexRandomly()
 {
-    return (rand() % 13) + 8;
+    return (rand() % (characterNumber / 2)) + (characterNumber / 2);
 }
 
 char CharacterBuffer::designateCharacterRandomly() {
     return char((rand() % 26) + 65);
 }
 
-Character **CharacterBuffer::getBuffer() {
+Character *CharacterBuffer::getBuffer() {
     return charBuffer;
 }
 
@@ -135,18 +134,18 @@ void CharacterBuffer::setCanPositionUpdate(bool canUpdate)
 
 bool CharacterBuffer::canUpdateStaticBuffer()
 {
-    return charBuffer[targetIndexToDraw - 2]->getTransparency() < 10 &&
+    return charBuffer[targetIndexToDraw - 2].getTransparency() < 10 &&
            !isPositionUpdatable &&
-            charBuffer[targetIndexToDraw - 1]->getIsTransparencyChangeable();
+            charBuffer[targetIndexToDraw - 1].getIsTransparencyChangeable();
 }
 
 void CharacterBuffer::setStaticBufferTransparency()
 {
     for (int i = 0; i < targetIndexToDraw; ++i)
     {
-        charBuffer[i]->setTransparency(0x00);
-        charBuffer[i]->setIsTransparencyChangeable(false);
+        charBuffer[i].setTransparency(0x00);
+        charBuffer[i].setIsTransparencyChangeable(false);
     }
 
-    charBuffer[targetIndexToDraw - 1]->setTransparency(0xFF);
+    charBuffer[targetIndexToDraw - 1].setTransparency(0xFF);
 }
