@@ -1,13 +1,13 @@
 
 #include "Character.h"
-
+#include <iostream>
 Character::Character()
 {
-    transparencyDecreasingSpeed = 299.f;
+    transparencyDecreasingSpeed = 200.f;
     transparency = 255;
     color = getColor();
     isTransparencyChangeable = true;
-    green = 225;
+    green = 255;
 }
 
 void Character::init(int xCord, int yCord, char value)
@@ -31,7 +31,6 @@ void Character::update()
 
     if (canTransparencyDecrease() && isTransparencyChangeable)
         decreaseTransparency(GetFrameTime() * transparencyDecreasingSpeed);
-
 }
 
 Color Character::getColor() {
