@@ -51,6 +51,8 @@ void Screen::update()
     {
         ClearBackground(BLACK);
 
+        std::cout << "Time : " << GetTime() << "   index : " << bufferIndex << std::endl;
+
         // Draw all letter in the letterBuffer
         for (int i = 0; i < bufferIndex; ++i)
         {
@@ -71,12 +73,12 @@ void Screen::update()
             }
         }
 
-        if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && bufferIndex != characterBufferNumber && !canDecreaseIndex())
+        if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && hasBufferIndexReachedMax() && !canDecreaseIndex())
         {
             bufferIndex++;
         }
 
-        else if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && bufferIndex != 0 && canDecreaseIndex())
+        else if (canChangeIndex(codeRainTimer, codeRainTimeLimit) && !isBufferIndexEmpty() && canDecreaseIndex())
         {
             bufferIndex--;
         }
@@ -100,5 +102,14 @@ bool Screen::canChangeIndex(float& timer, float& timeLimit)
 
 bool Screen::canDecreaseIndex()
 {
-    return GetTime() > 20.f;
+    return GetTime() > 150.f;
+}
+
+bool Screen::hasBufferIndexReachedMax()
+{
+    return bufferIndex == characterBufferNumber;
+}
+
+bool Screen::isBufferIndexEmpty() {
+    return bufferIndex == 0;
 }

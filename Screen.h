@@ -11,7 +11,7 @@ class CharacterBuffer;
 class Screen {
     const static int windowWidth = 800;
     const static int windowHeight = 600;
-    const static int characterBufferNumber = 55;
+    const static int characterBufferNumber = 150;
 
     int matrixBufferMinStart;
     int bufferIndex;
@@ -38,6 +38,8 @@ public:
     void update();
     bool canChangeIndex(float& timer, float& timeLimit);
     bool canDecreaseIndex();
+    bool hasBufferIndexReachedMax();
+    bool isBufferIndexEmpty();
 };
 
 
