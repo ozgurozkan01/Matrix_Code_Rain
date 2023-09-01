@@ -10,7 +10,7 @@ int CharacterBuffer::characterNumber = 29;
 
 CharacterBuffer::CharacterBuffer()
 {
-    timeLimit = 0.035;
+    timeLimit = 0.05;
     timer = 0.f;
     index = 1;
 

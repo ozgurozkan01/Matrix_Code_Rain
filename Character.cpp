@@ -3,7 +3,7 @@
 #include <iostream>
 Character::Character()
 {
-    transparencyDecreasingSpeed = 200.f;
+    transparencyDecreasingSpeed = 300.f;
     transparency = 255;
     color = getColor();
     isTransparencyChangeable = true;

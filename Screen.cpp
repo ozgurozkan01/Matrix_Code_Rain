@@ -39,7 +39,7 @@ Screen::Screen()
     codeRainTimeLimit = 0.025;
     matrixTimer = 0;
     matrixTimeLimit = 0.3;
-    matrixBufferMinStart = 150;
+    matrixBufferMinStart = 175;
 
     canBufferIndexIncrease = true;
 }
@@ -97,7 +97,6 @@ void Screen::update()
             bufferIndex--;
         }
 
-        std::cout << bufferIndex << std::endl;
         EndDrawing();
     }
 }
