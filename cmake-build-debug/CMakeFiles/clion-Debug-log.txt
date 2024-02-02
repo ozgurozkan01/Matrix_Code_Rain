@@ -15,6 +15,6 @@ ninja: no work to do.
 -- Compiling with the flags:
 --   PLATFORM=PLATFORM_DESKTOP
 --   GRAPHICS=GRAPHICS_API_OPENGL_33
--- Configuring done (1.1s)
+-- Configuring done (0.7s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug

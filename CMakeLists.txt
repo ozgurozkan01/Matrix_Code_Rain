@@ -25,13 +25,13 @@ endif()
 
 # Our Project
 
-add_executable(${PROJECT_NAME} main.cpp
-        Character.cpp
-        Character.h
-        CharacterBuffer.cpp
-        CharacterBuffer.h
-        Screen.cpp
-        Screen.h)
+add_executable(${PROJECT_NAME} src/main.cpp
+        src/Character.cpp
+        src/Character.h
+        src/CharacterBuffer.cpp
+        src/CharacterBuffer.h
+        src/Screen.cpp
+        src/Screen.h)
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
 

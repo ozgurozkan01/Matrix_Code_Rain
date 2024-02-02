@@ -49,37 +49,37 @@ cmake_ninja_workdir = C$:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/
 
 build cmake_object_order_depends_target_Matrix_Code_Rain: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib
 
-build CMakeFiles/Matrix_Code_Rain.dir/main.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/main.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
+build CMakeFiles/Matrix_Code_Rain.dir/src/main.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/src/main.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\main.cpp.obj.d
+  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\src\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir
-  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir
+  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir\src
 
-build CMakeFiles/Matrix_Code_Rain.dir/Character.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/Character.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
+build CMakeFiles/Matrix_Code_Rain.dir/src/Character.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/src/Character.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\Character.cpp.obj.d
+  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\src\Character.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir
-  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir
+  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir\src
 
-build CMakeFiles/Matrix_Code_Rain.dir/CharacterBuffer.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/CharacterBuffer.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
+build CMakeFiles/Matrix_Code_Rain.dir/src/CharacterBuffer.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/src/CharacterBuffer.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\CharacterBuffer.cpp.obj.d
+  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\src\CharacterBuffer.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir
-  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir
+  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir\src
 
-build CMakeFiles/Matrix_Code_Rain.dir/Screen.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/Screen.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
+build CMakeFiles/Matrix_Code_Rain.dir/src/Screen.cpp.obj: CXX_COMPILER__Matrix_Code_Rain_unscanned_Debug C$:/Users/ozgur/GitHub/Matrix_Code_Rain/src/Screen.cpp || cmake_object_order_depends_target_Matrix_Code_Rain
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\Screen.cpp.obj.d
+  DEP_FILE = CMakeFiles\Matrix_Code_Rain.dir\src\Screen.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir
-  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir
+  OBJECT_FILE_DIR = CMakeFiles\Matrix_Code_Rain.dir\src
 
 
 # =============================================================================
@@ -89,7 +89,7 @@ build CMakeFiles/Matrix_Code_Rain.dir/Screen.cpp.obj: CXX_COMPILER__Matrix_Code_
 #############################################
 # Link the executable Matrix_Code_Rain.exe
 
-build Matrix_Code_Rain.exe: CXX_EXECUTABLE_LINKER__Matrix_Code_Rain_Debug CMakeFiles/Matrix_Code_Rain.dir/main.cpp.obj CMakeFiles/Matrix_Code_Rain.dir/Character.cpp.obj CMakeFiles/Matrix_Code_Rain.dir/CharacterBuffer.cpp.obj CMakeFiles/Matrix_Code_Rain.dir/Screen.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
+build Matrix_Code_Rain.exe: CXX_EXECUTABLE_LINKER__Matrix_Code_Rain_Debug CMakeFiles/Matrix_Code_Rain.dir/src/main.cpp.obj CMakeFiles/Matrix_Code_Rain.dir/src/Character.cpp.obj CMakeFiles/Matrix_Code_Rain.dir/src/CharacterBuffer.cpp.obj CMakeFiles/Matrix_Code_Rain.dir/src/Screen.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  _deps/raylib-build/raylib/external/glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Matrix_Code_Rain.dir

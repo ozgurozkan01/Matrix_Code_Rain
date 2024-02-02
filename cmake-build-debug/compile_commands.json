@@ -1,27 +1,27 @@
 [
 {
   "directory": "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\main.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\main.cpp",
-  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\main.cpp",
-  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\main.cpp.obj"
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\src\\main.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\main.cpp",
+  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\main.cpp",
+  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\src\\main.cpp.obj"
 },
 {
   "directory": "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\Character.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\Character.cpp",
-  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\Character.cpp",
-  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\Character.cpp.obj"
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\src\\Character.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\Character.cpp",
+  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\Character.cpp",
+  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\src\\Character.cpp.obj"
 },
 {
   "directory": "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\CharacterBuffer.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\CharacterBuffer.cpp",
-  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\CharacterBuffer.cpp",
-  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\CharacterBuffer.cpp.obj"
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\src\\CharacterBuffer.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\CharacterBuffer.cpp",
+  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\CharacterBuffer.cpp",
+  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\src\\CharacterBuffer.cpp.obj"
 },
 {
   "directory": "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\Screen.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\Screen.cpp",
-  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\Screen.cpp",
-  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\Screen.cpp.obj"
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.5\\bin\\mingw\\bin\\G__~1.EXE -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src -IC:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles\\Matrix_Code_Rain.dir\\src\\Screen.cpp.obj -c C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\Screen.cpp",
+  "file": "C:\\Users\\ozgur\\GitHub\\Matrix_Code_Rain\\src\\Screen.cpp",
+  "output": "CMakeFiles\\Matrix_Code_Rain.dir\\src\\Screen.cpp.obj"
 },
 {
   "directory": "C:/Users/ozgur/GitHub/Matrix_Code_Rain/cmake-build-debug",
